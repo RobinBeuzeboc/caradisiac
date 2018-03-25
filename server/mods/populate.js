@@ -33,7 +33,6 @@ function addIndexElastic(tab) {
 }
 
 exports.addInElastic = (callback) => {
-  console.log("Scrapping car models...");
   getBrands().then(function(brands) {
     let promises = []
     for (var i = 0; i < brands.length; i++) {
